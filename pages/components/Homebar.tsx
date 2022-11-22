@@ -1,27 +1,25 @@
 import Link from 'next/link';
 import { HStack, Flex, Spacer, Heading } from '@chakra-ui/layout';
 
-const Navbar = () => {
-  const routes = ['WORK', 'ABOUT', 'CONTACT'];
-
+const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
   return (
     <Flex w="100%" p="2%">
       <HStack w="100%">
-        <Link href={`/${routes[0].toLowerCase()}`}>
+        <Link href={`/${left.toLowerCase()}`}>
           <Heading fontSize="20" fontWeight="light">
-            {routes[0]}
+            {left}
           </Heading>
         </Link>
         <Spacer />
-        <Link href={`/${routes[1].toLowerCase()}`}>
+        <Link href={`/`}>
           <Heading fontSize="20" fontWeight="light">
-            {routes[1]}
+            HOME
           </Heading>
         </Link>
         <Spacer />
-        <Link href={`/${routes[2].toLowerCase()}`}>
+        <Link href={`/${right.toLowerCase()}`}>
           <Heading fontSize="20" fontWeight="light">
-            {routes[2]}
+            {right}
           </Heading>
         </Link>
       </HStack>
@@ -29,4 +27,4 @@ const Navbar = () => {
   );
 };
 
-export default Navbar;
+export default Homebar;
