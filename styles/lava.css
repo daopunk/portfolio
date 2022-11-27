@@ -1,0 +1,93 @@
+@keyframes updown {
+  0% {
+    top: 100vh;
+  }
+  50% {
+    top: 0;
+  }
+  100% {
+    top: 100vh;
+  }
+}
+
+@keyframes leftright {
+  0% {
+    left: 0;
+  }
+  50% {
+    left: 100vh;
+  }
+  100% {
+    left: 0;
+  }
+}
+
+@keyframes vastag {
+  0% {
+    width: 10vh;
+  }
+  50% {
+    width: 50vh;
+  }
+  100% {
+    width: 10vh;
+  }
+}
+
+@keyframes forog {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+#canvas {
+  z-index: -10;
+  overflow: hidden;
+  width: 100vw;
+  height: 103vh;
+  filter: contrast(4);
+  background: linear-gradient(
+    #1b0c02 40%,
+    rgb(125, 0, 170) 80%,
+    rgb(2, 247, 194) 100%
+  );
+  box-shadow: inset 0 -5vh 15vh 3vh rgba(9, 91, 242, 0.6),
+    0 0 2.5px 0.2px rgb(36, 188, 243);
+}
+
+#nothing {
+  color: rgb(149, 2, 247);
+}
+
+.bubble {
+  height: 16vh;
+  background: rgb(100, 2, 247);
+  position: absolute;
+  filter: blur(15vh);
+  animation: updown linear 37s infinite, leftright ease-in-out 23s infinite,
+    vastag linear 29s infinite, forog linear 31s infinite;
+}
+.bubble:nth-child(2) {
+  animation: updown ease-in 11s infinite, leftright ease-in-out 47s infinite,
+    vastag linear 13s infinite, forog linear 29s infinite;
+}
+.bubble:nth-child(3) {
+  animation: updown ease-out 13s infinite, leftright ease-in-out 53s infinite,
+    vastag linear 29s infinite, forog linear 31s infinite;
+}
+.bubble:nth-child(4) {
+  animation: updown ease-in-out 17s infinite, leftright ease-in-out 59s infinite,
+    vastag linear 31s infinite, forog linear 41s infinite;
+}
+.bubble:nth-child(5) {
+  animation: updown ease-in-out 29s infinite, leftright ease-in-out 31s infinite,
+    vastag linear 37s infinite, forog linear 47s infinite;
+}
+.bubble:nth-child(6) {
+  animation: updown ease-in-out 10s infinite, leftright ease-in-out 21s infinite,
+    vastag linear 12s infinite, forog linear 10s infinite;
+}
+.bubble:last-child {
+  animation: updown linear 53s infinite, leftright ease-in-out 29s infinite,
+    vastag linear 19s infinite, forog linear 37s infinite;
+}

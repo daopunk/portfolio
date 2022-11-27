@@ -1,5 +1,5 @@
 import Link from 'next/link';
-import { VStack, Flex, Spacer, Heading } from '@chakra-ui/layout';
+import { VStack, Flex, Spacer, Heading, Text } from '@chakra-ui/layout';
 
 const Name = () => {
   return (
@@ -11,7 +11,9 @@ const Name = () => {
     >
       <VStack alignItems="start">
         <Heading>Hunter King</Heading>
-        <Heading>Web3 Developer</Heading>
+        <Heading>
+          Web<span style={{ color: 'rgb(149, 2, 247)' }}>3</span> Developer
+        </Heading>
       </VStack>
     </Flex>
   );
