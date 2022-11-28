@@ -12,7 +12,7 @@
 
 @keyframes leftright {
   0% {
-    left: 0;
+    left: 20vh;
   }
   50% {
     left: 100vh;
@@ -45,50 +45,40 @@
   overflow: hidden;
   width: 100vw;
   height: 103vh;
-  filter: contrast(4);
+  filter: contrast(100);
   background: linear-gradient(
-    #1b0c02 40%,
-    rgb(125, 0, 170) 80%,
-    rgb(2, 247, 194) 100%
+    #36009c 40%,
+    #534fa5 80%,
+    #ce95fb(2, 247, 194) 100%
   );
-  box-shadow: inset 0 -5vh 15vh 3vh rgba(9, 91, 242, 0.6),
-    0 0 2.5px 0.2px rgb(36, 188, 243);
-}
-
-#nothing {
-  color: rgb(149, 2, 247);
+  box-shadow: inset 5vh -10vh 20vh 3vh #000;
 }
 
 .bubble {
   height: 16vh;
-  background: rgb(100, 2, 247);
+  background: #00fbda;
   position: absolute;
   filter: blur(15vh);
-  animation: updown linear 25s infinite, leftright ease-in-out 23s infinite,
-    vastag linear 22s infinite, forog linear 28s infinite;
+  animation: updown linear 15s infinite, leftright ease-in-out 23s infinite,
+    vastag linear 12s infinite, forog linear 18s infinite;
 }
 .bubble:nth-child(2) {
-  animation: updown ease-in 11s infinite, leftright ease-in-out 47s infinite,
-    vastag linear 13s infinite, forog linear 29s infinite;
+  animation: updown ease-in 8s infinite, leftright ease-in-out 47s infinite,
+    vastag linear 3s infinite, forog linear 9s infinite;
 }
 .bubble:nth-child(3) {
-  animation: updown ease-out 13s infinite, leftright ease-in-out 53s infinite,
-    vastag linear 29s infinite, forog linear 31s infinite;
+  animation: updown ease-out 8s infinite, leftright ease-in-out 53s infinite,
+    vastag linear 9s infinite, forog linear 7s infinite;
 }
 .bubble:nth-child(4) {
   animation: updown ease-in-out 17s infinite, leftright ease-in-out 59s infinite,
-    vastag linear 31s infinite, forog linear 41s infinite;
+    vastag linear 31s infinite, forog linear 31s infinite;
 }
-
 .bubble:nth-child(5) {
-  animation: updown ease-in-out 29s infinite, leftright ease-in-out 31s infinite,
-    vastag linear 37s infinite, forog linear 47s infinite;
-}
-.bubble:nth-child(6) {
-  animation: updown ease-in-out 10s infinite, leftright ease-in-out 21s infinite,
-    vastag linear 12s infinite, forog linear 10s infinite;
+  animation: updown ease-in-out 19s infinite, leftright ease-in-out 31s infinite,
+    vastag linear 27s infinite, forog linear 27s infinite;
 }
 .bubble:last-child {
-  animation: updown linear 53s infinite, leftright ease-in-out 29s infinite,
-    vastag linear 19s infinite, forog linear 37s infinite;
+  animation: updown linear 33s infinite, leftright ease-in-out 29s infinite,
+    vastag linear 19s infinite, forog linear 17s infinite;
 }

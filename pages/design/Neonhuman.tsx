@@ -1,16 +1,15 @@
-import { Flex } from '@chakra-ui/layout';
+import { Flex, VStack, Text } from '@chakra-ui/layout';
 
 const Neonhuman = () => {
+  const x = 'neonX lh';
   return (
-    <Flex position="absolute" top="15vh">
-      <Flex className="neonX">hello</Flex>
-      <Flex className="neonX">--------------------</Flex>
-      <Flex className="neonX"></Flex>
-      <Flex className="neonX"></Flex>
-      <Flex className="neonX"></Flex>
-      <Flex className="neonX"></Flex>
-      <Flex className="neonX"></Flex>
-    </Flex>
+    <VStack position="absolute" top="15vh" alignItems="start">
+      <pre className={x}>{` .##. ###. #### #  # #####`}</pre>
+      <pre className={x}>{` #  # #  # #  # #  #   # `}</pre>
+      <pre className={x}>{` #  # ###: #  # #  #   # `}</pre>
+      <pre className={x}>{` #### #  # #  # #  #   # `}</pre>
+      <pre className={x}>{` #  # ###' #### ####   # `}</pre>
+    </VStack>
   );
 };
 

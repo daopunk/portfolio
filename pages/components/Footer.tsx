@@ -4,7 +4,8 @@ import { IconButton, Icon } from '@chakra-ui/react';
 import { FaLinkedin, FaGithubSquare, FaMedium } from 'react-icons/fa';
 
 const Footer = () => {
-  const iconColor = 'black';
+  const iconColor = '#bafac8';
+  const iconShadow = '0 0 3px #02f938, 0 0 1px #02f938';
 
   return (
     <Flex position="absolute" bottom="0" w="100%" p=".5%">
@@ -19,7 +20,9 @@ const Footer = () => {
             w="8"
             h="8"
             color={iconColor}
+            shadow={iconShadow}
             style={{ cursor: 'pointer' }}
+            _hover={{ transform: 'scale(1.2)', transition: '.2s' }}
           />
         </Link>
       </Flex>
@@ -31,7 +34,9 @@ const Footer = () => {
             w="8"
             h="8"
             color={iconColor}
+            shadow={iconShadow}
             style={{ cursor: 'pointer' }}
+            _hover={{ transform: 'scale(1.2)', transition: '.2s' }}
           />
         </Link>
       </Flex>
@@ -43,7 +48,12 @@ const Footer = () => {
             w="8"
             h="8"
             color={iconColor}
+            shadow={iconShadow}
             style={{ cursor: 'pointer' }}
+            _hover={{
+              transform: 'scale(1.2)',
+              transition: '.2s',
+            }}
           />
         </Link>
       </Flex>

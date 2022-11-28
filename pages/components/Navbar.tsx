@@ -1,17 +1,9 @@
 import Link from 'next/link';
 import { HStack, Flex, Spacer, Heading } from '@chakra-ui/layout';
+import { MouseOver, MouseOut } from '../utils/hover';
 
 const Navbar = () => {
   const routes = ['WORK', 'ABOUT', 'CONTACT'];
-
-  function MouseOver(e: any) {
-    e.target.style.textShadow =
-      '0 0 8px #0fa, 0 0 12px #0fa, 0 0 16px #0fa, 0 0 20px #0fa, 0 0 40px #0fa, 0 0 60px #0fa';
-  }
-  function MouseOut(e: any) {
-    e.target.style.textShadow =
-      '0 0 1px #0fa, 0 0 1px #0fa, 0 0 1px #0fa, 0 0 1px #0fa';
-  }
 
   return (
     <Flex position="absolute" w="100%" p="2%">

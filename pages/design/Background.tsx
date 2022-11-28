@@ -9,7 +9,6 @@ const Background = () => {
       <Flex className="bubble"></Flex>
       <Flex className="bubble"></Flex>
       <Flex className="bubble"></Flex>
-      <Flex className="bubble"></Flex>
     </Flex>
   );
 };

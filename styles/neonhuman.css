@@ -6,16 +6,22 @@
 
 .neonY {
   color: #fff;
-  text-shadow: 0 0 1px #c17cfa, 0 0 1px #c17cfa, 0 0 2px #c17cfa,
-    0 0 12px #c17cfa;
+  text-shadow: 0 0 1px #02f938, 0 0 1px #02f938, 0 0 2px #02f938,
+    0 0 12px #02f938;
 }
 
 .neonYy {
-  text-shadow: 0 0 1px #0fa, 0 0 1px #0fa, 0 0 1px #0fa, 0 0 1px #0fa;
+  text-shadow: 0 0 1px #02f938, 0 0 1px #02f938, 0 0 1px #02f938,
+    0 0 1px #02f938;
 }
 
 .neonZ {
-  color: rgb(241, 158, 252);
-  text-shadow: 0 0 1px #c17cfa, 0 0 1px #c17cfa, 0 0 1px #c17cfa,
-    0 0 10px #c17cfa;
+  color: rgb(196, 250, 228);
+  text-shadow: 0 0 1px #02f938, 0 0 1px #02f938, 0 0 1px #02f938,
+    0 0 10px #02f938, 0 0 11px #02f938;
+}
+
+.lh {
+  line-height: 50%;
+  font-size: medium;
 }
