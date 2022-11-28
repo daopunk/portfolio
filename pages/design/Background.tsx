@@ -1,6 +1,6 @@
 import { Flex } from '@chakra-ui/layout';
 
-const Animation = () => {
+const Background = () => {
   return (
     <Flex id="canvas" position="absolute" top="-5">
       <Flex className="bubble"></Flex>
@@ -14,4 +14,4 @@ const Animation = () => {
   );
 };
 
-export default Animation;
+export default Background;

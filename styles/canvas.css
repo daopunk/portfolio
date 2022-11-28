@@ -64,8 +64,8 @@
   background: rgb(100, 2, 247);
   position: absolute;
   filter: blur(15vh);
-  animation: updown linear 37s infinite, leftright ease-in-out 23s infinite,
-    vastag linear 29s infinite, forog linear 31s infinite;
+  animation: updown linear 25s infinite, leftright ease-in-out 23s infinite,
+    vastag linear 22s infinite, forog linear 28s infinite;
 }
 .bubble:nth-child(2) {
   animation: updown ease-in 11s infinite, leftright ease-in-out 47s infinite,
@@ -79,6 +79,7 @@
   animation: updown ease-in-out 17s infinite, leftright ease-in-out 59s infinite,
     vastag linear 31s infinite, forog linear 41s infinite;
 }
+
 .bubble:nth-child(5) {
   animation: updown ease-in-out 29s infinite, leftright ease-in-out 31s infinite,
     vastag linear 37s infinite, forog linear 47s infinite;

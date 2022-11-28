@@ -4,23 +4,50 @@ import { HStack, Flex, Spacer, Heading } from '@chakra-ui/layout';
 const Navbar = () => {
   const routes = ['WORK', 'ABOUT', 'CONTACT'];
 
+  function MouseOver(e: any) {
+    e.target.style.textShadow =
+      '0 0 8px #0fa, 0 0 12px #0fa, 0 0 16px #0fa, 0 0 20px #0fa, 0 0 40px #0fa, 0 0 60px #0fa';
+  }
+  function MouseOut(e: any) {
+    e.target.style.textShadow =
+      '0 0 1px #0fa, 0 0 1px #0fa, 0 0 1px #0fa, 0 0 1px #0fa';
+  }
+
   return (
     <Flex position="absolute" w="100%" p="2%">
       <HStack w="100%">
         <Link href={`/${routes[0].toLowerCase()}`}>
-          <Heading fontSize="20" fontWeight="bold">
+          <Heading
+            fontSize="20"
+            fontWeight="bold"
+            className="neonYy"
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
+          >
             {routes[0]}
           </Heading>
         </Link>
         <Spacer />
         <Link href={`/${routes[1].toLowerCase()}`}>
-          <Heading fontSize="20" fontWeight="bold">
+          <Heading
+            fontSize="20"
+            fontWeight="bold"
+            className="neonYy"
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
+          >
             {routes[1]}
           </Heading>
         </Link>
         <Spacer />
         <Link href={`/${routes[2].toLowerCase()}`}>
-          <Heading fontSize="20" fontWeight="bold">
+          <Heading
+            fontSize="20"
+            fontWeight="bold"
+            className="neonYy"
+            onMouseOver={MouseOver}
+            onMouseOut={MouseOut}
+          >
             {routes[2]}
           </Heading>
         </Link>

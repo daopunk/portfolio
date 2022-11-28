@@ -10,9 +10,12 @@ const Name = () => {
       transform="translate(-50%, -45%)"
     >
       <VStack alignItems="start">
-        <Heading fontWeight="thin">Hunter King</Heading>
-        <Heading>
-          Web<span style={{ color: 'rgb(149, 2, 247)' }}>3</span> Developer
+        <Heading fontWeight="thin" className="neonY">
+          Hunter King
+        </Heading>
+        <Heading className="neonYy">
+          Web
+          <span className="neonZ">3</span> Developer
         </Heading>
       </VStack>
     </Flex>

@@ -5,8 +5,12 @@ const Roles = () => {
   return (
     <Flex position="absolute" bottom="0" left="0" pb="20" pl="3%">
       <VStack alignItems="start">
-        <Text fontWeight="extrabold">Smart Contract Engineering</Text>
-        <Text fontWeight="extrabold">Fullstack Development</Text>
+        <Text fontWeight="extrabold" className="neonYy">
+          Smart Contract Engineering
+        </Text>
+        <Text fontWeight="extrabold" className="neonYy">
+          Fullstack Development
+        </Text>
       </VStack>
     </Flex>
   );
