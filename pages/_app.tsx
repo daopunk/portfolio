@@ -1,8 +1,15 @@
-import '../styles/globals.css';
+import '@fontsource/source-code-pro/700.css';
+import '@fontsource/roboto-mono/300.css';
 import '../styles/lava.css';
 import type { AppProps } from 'next/app';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
-import theme from './design/theme';
+
+const theme = extendTheme({
+  fonts: {
+    heading: `'Roboto Mono', monospace`,
+    body: `'Roboto Mono', monospace`,
+  },
+});
 
 export default function App({ Component, pageProps }: AppProps) {
   return (
