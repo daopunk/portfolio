@@ -4,7 +4,7 @@ import Neonhuman from './design/Neonhuman';
 
 export default function About() {
   return (
-    <VStack h="100vh" position="relative" backgroundColor="black">
+    <VStack h="160vh" position="relative" backgroundColor="black">
       <Homebar />
       <Neonhuman />
     </VStack>
