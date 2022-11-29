@@ -1,9 +1,10 @@
 import Link from 'next/link';
 import { HStack, Flex, Spacer, Heading } from '@chakra-ui/layout';
-import { MouseOver, MouseOut } from '../utils/hover';
 
 const Navbar = () => {
   const routes = ['WORK', 'ABOUT', 'CONTACT'];
+  const y =
+    '0 0 8px #0fa, 0 0 12px #0fa, 0 0 16px #0fa, 0 0 20px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 60px #0fa';
 
   return (
     <Flex position="absolute" w="100%" p="2%">
@@ -13,8 +14,7 @@ const Navbar = () => {
             fontSize="20"
             fontWeight="bold"
             className="neonYy"
-            onMouseOver={MouseOver}
-            onMouseOut={MouseOut}
+            _hover={{ textShadow: y }}
           >
             {routes[0]}
           </Heading>
@@ -25,8 +25,7 @@ const Navbar = () => {
             fontSize="20"
             fontWeight="bold"
             className="neonYy"
-            onMouseOver={MouseOver}
-            onMouseOut={MouseOut}
+            _hover={{ textShadow: y }}
           >
             {routes[1]}
           </Heading>
@@ -37,8 +36,7 @@ const Navbar = () => {
             fontSize="20"
             fontWeight="bold"
             className="neonYy"
-            onMouseOver={MouseOver}
-            onMouseOut={MouseOut}
+            _hover={{ textShadow: y }}
           >
             {routes[2]}
           </Heading>

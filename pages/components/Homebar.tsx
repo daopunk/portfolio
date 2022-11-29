@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import { HStack, Flex, Spacer, Heading } from '@chakra-ui/layout';
-import { MouseOver, MouseOut } from '../utils/hover';
 
 const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
+  const y =
+    '0 0 8px #0fa, 0 0 12px #0fa, 0 0 16px #0fa, 0 0 20px #0fa, 0 0 40px #0fa, 0 0 50px #0fa, 0 0 60px #0fa';
+
   return (
     <Flex w="100%" p="2%">
       <HStack w="100%">
@@ -11,8 +13,7 @@ const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
             fontSize="20"
             fontWeight="bold"
             className="neonYy"
-            onMouseOver={MouseOver}
-            onMouseOut={MouseOut}
+            _hover={{ textShadow: y }}
           >
             {left}
           </Heading>
@@ -23,8 +24,7 @@ const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
             fontSize="20"
             fontWeight="bold"
             className="neonYy"
-            onMouseOver={MouseOver}
-            onMouseOut={MouseOut}
+            _hover={{ textShadow: y }}
           >
             HOME
           </Heading>
@@ -35,8 +35,7 @@ const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
             fontSize="20"
             fontWeight="bold"
             className="neonYy"
-            onMouseOver={MouseOver}
-            onMouseOut={MouseOut}
+            _hover={{ textShadow: y }}
           >
             {right}
           </Heading>

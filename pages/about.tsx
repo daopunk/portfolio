@@ -1,10 +1,10 @@
-import { VStack, Text, Flex, HStack } from '@chakra-ui/react';
+import { VStack } from '@chakra-ui/react';
 import Homebar from './components/Homebar';
 import Neonhuman from './design/Neonhuman';
 
 export default function About() {
   return (
-    <VStack h="160vh" position="relative" backgroundColor="black">
+    <VStack h="180vh" position="relative" backgroundColor="black">
       <Homebar />
       <Neonhuman />
     </VStack>

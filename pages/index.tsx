@@ -1,4 +1,4 @@
-import { VStack, Text, Flex, HStack } from '@chakra-ui/react';
+import { VStack } from '@chakra-ui/react';
 import Meta from './components/Meta';
 import Navbar from './components/Navbar';
 import Name from './components/Name';
