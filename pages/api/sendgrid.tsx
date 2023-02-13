@@ -9,10 +9,15 @@ async function sendEmail(req: any, res: any) {
   try {
     console.log('REQ.BODY', req.body);
     await sendgrid.send({
-      to: 'mannuarora7000@gmail.com', // Your email where you'll receive emails
-      from: 'manuarorawork@gmail.com', // your website email address here
+      to: process.env.EMAIL, // email to receive emails
+      from: process.env.WEBMAIL ? process.env.WEBMAIL : '', // website email
       subject: `${req.body.subject}`,
-      html: `<div>You've got a mail</div>`,
+      html: `
+			<div>
+				<p>From: ${req.body.name} at ${req.body.email}</p>
+				<p>Message: ${req.body.message}</p>
+			</div>
+			`,
     });
   } catch (error: any) {
     console.log(error);
