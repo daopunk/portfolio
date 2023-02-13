@@ -6,8 +6,9 @@ import type { AppProps } from 'next/app';
 import { ChakraProvider, extendTheme } from '@chakra-ui/react';
 
 const theme = extendTheme({
+  initialColorMode: 'dark',
+  useSystemColorMode: false,
   fonts: {
-    initialColorMode: 'dark',
     heading: `'Roboto Mono', monospace`,
     body: `'Roboto Mono', monospace`,
   },
