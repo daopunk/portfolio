@@ -1,4 +1,4 @@
-import { VStack, Text, Flex, HStack } from '@chakra-ui/react';
+import { VStack } from '@chakra-ui/react';
 import Homebar from './components/Homebar';
 import Footer from './components/Footer';
 import ContactForm from './components/ContactForm';
