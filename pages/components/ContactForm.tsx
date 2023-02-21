@@ -1,4 +1,5 @@
-import { useState } from 'react';
+import { useState, MouseEvent } from 'react';
+import { sendContactForm } from '../api/firebase';
 import { Stack, VStack, Text } from '@chakra-ui/layout';
 import { FormControl, FormLabel, Button, Textarea } from '@chakra-ui/react';
 import {
@@ -25,30 +26,26 @@ const ContactForm = (props: any) => {
     } else setVerify(true);
   };
 
-  const fetchRes = async () => {
-    return await fetch('/api/sendgrid', {
-      body: JSON.stringify({ email, name, subject, message }),
-      headers: { 'Content-Type': 'application/json' },
-      method: 'POST',
-    });
-  };
-
   const handleSubmit = async (e: MouseEvent) => {
     e.preventDefault();
     setSubmit(false);
     setSuccess(false);
     setFail(false);
     handleValidation();
-    if (!verify) return;
-    else {
-      const res = await fetchRes();
-      const { error } = await res.json();
-      if (error) {
-        console.log(error);
-        setFail(true);
-      } else {
+    if (!verify) {
+      console.log('Fill in all inputs!');
+    } else {
+      const res = await sendContactForm({
+        name,
+        email,
+        message,
+      });
+      if (res == 0) {
         console.log(name, email, subject, message);
         setSuccess(true);
+      } else {
+        console.log('Send contact error!');
+        setFail(true);
       }
     }
   };
@@ -109,7 +106,7 @@ const ContactForm = (props: any) => {
         isLoading={props.isSubmitting}
         className="neonY"
         type="submit"
-        onClick={() => handleSubmit}
+        onClick={(e) => handleSubmit(e)}
       >
         Submit
       </Button>
