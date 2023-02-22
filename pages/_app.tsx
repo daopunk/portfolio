@@ -1,7 +1,7 @@
 import '@fontsource/source-code-pro/700.css';
 import '@fontsource/roboto-mono/300.css';
 import '../styles/canvas.css';
-import '../styles/neonhuman.css';
+import '../styles/neon.css';
 import type { AppProps } from 'next/app';
 import { ChakraProvider, extendTheme, ThemeConfig } from '@chakra-ui/react';
 

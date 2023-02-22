@@ -10,6 +10,18 @@
   }
 }
 
+@keyframes downup {
+  0% {
+    bottom: 120vh;
+  }
+  50% {
+    bottom: 0;
+  }
+  100% {
+    bottom: 110vh;
+  }
+}
+
 @keyframes leftright {
   0% {
     left: -20vh;
@@ -22,19 +34,37 @@
   }
 }
 
+@keyframes rightleft {
+  0% {
+    right: -20vh;
+  }
+  50% {
+    right: 120vh;
+  }
+  100% {
+    right: -20;
+  }
+}
+
 @keyframes vastag {
   0% {
-    width: 500vh;
+    width: 150vh;
   }
   50% {
     width: 130vh;
   }
   100% {
-    width: 90vh;
+    width: 250vh;
   }
 }
 
-@keyframes forog {
+@keyframes forog180 {
+  100% {
+    transform: rotate(180deg);
+  }
+}
+
+@keyframes forog360 {
   100% {
     transform: rotate(360deg);
   }
@@ -59,22 +89,18 @@
   background: #00fbda;
   position: absolute;
   filter: blur(15vh);
-  animation: updown linear 15s infinite, leftright ease-in-out 23s infinite,
-    vastag linear 12s infinite, forog linear 18s infinite;
+  animation: downup linear 17s infinite, rightleft ease-in-out 17s infinite,
+    vastag linear 10s infinite, forog180 linear 10s infinite;
 }
 .bubble:nth-child(2) {
-  animation: updown ease-in 8s infinite, leftright ease-in-out 47s infinite,
-    vastag linear 3s infinite, forog linear 9s infinite;
+  animation: downup ease-in 10s infinite, rightleft ease-in-out 10s infinite,
+    vastag linear 12s infinite, forog360 linear 15s infinite;
 }
-.bubble:nth-child(2) {
-  animation: updown ease-out 8s infinite, leftright ease-in-out 53s infinite,
-    vastag linear 9s infinite, forog linear 7s infinite;
-}
-.bubble:nth-child(4) {
-  animation: updown ease-in-out 17s infinite, leftright ease-in-out 59s infinite,
-    vastag linear 31s infinite, forog linear 31s infinite;
+.bubble:nth-child(3) {
+  animation: updown ease-out 8s infinite, leftright ease-in-out 22s infinite,
+    vastag linear 10s infinite, forog180 linear 10s infinite;
 }
 .bubble:last-child {
-  animation: updown linear 33s infinite, leftright ease-in-out 29s infinite,
-    vastag linear 19s infinite, forog linear 17s infinite;
+  animation: updown linear 33s infinite, leftright ease-in-out 33s infinite,
+    vastag linear 10s infinite, forog360 linear 15s infinite;
 }

@@ -64,7 +64,7 @@ export default function Contact() {
     <VStack h="125vh" position="relative" backgroundColor="black">
       <Homebar right="ABOUT" />
       <VStack py="50px">
-        <Text fontWeight="medium" className="neonYy" py="15px" fontSize="20">
+        <Text fontWeight="medium" className="neonText" py="15px" fontSize="20">
           Let's Collaborate.
         </Text>
         {!verify && submit && (
@@ -137,11 +137,11 @@ export default function Contact() {
         </FormControl>
         <Button
           isLoading={isSubmitting}
-          className="neonYy"
+          className="neonText"
           type="submit"
           onClick={(e) => handleSubmit(e)}
           fontWeight="medium"
-          fontSize="18"
+          fontSize="20"
         >
           Submit
         </Button>

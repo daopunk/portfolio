@@ -12,7 +12,7 @@ const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
           <Heading
             fontSize="20"
             fontWeight="bold"
-            className="neonYy"
+            className="neonBase"
             _hover={{ textShadow: y }}
           >
             {left}
@@ -23,7 +23,7 @@ const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
           <Heading
             fontSize="20"
             fontWeight="bold"
-            className="neonYy"
+            className="neonBase"
             _hover={{ textShadow: y }}
           >
             HOME
@@ -34,7 +34,7 @@ const Homebar = ({ left = 'WORK', right = 'CONTACT' }: any) => {
           <Heading
             fontSize="20"
             fontWeight="bold"
-            className="neonYy"
+            className="neonBase"
             _hover={{ textShadow: y }}
           >
             {right}

@@ -1,21 +1,24 @@
-.neonX {
+.neonSnake {
   color: #fff;
   text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
     0 0 82px #0fa, 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa;
 }
 
-.neonY {
+.neonName {
   color: #fff;
   text-shadow: 0 0 1px #02f938, 0 0 1px #02f938, 0 0 2px #02f938,
     0 0 12px #02f938;
 }
 
-.neonYy {
-  text-shadow: 0 0 1px #02f938, 0 0 1px #02f938, 0 0 1px #02f938,
-    0 0 1px #02f938;
+.neonBase {
+  text-shadow: 0 0 1px #02f938, 0 0 1px #02f938, 0 0 1px #02f938;
 }
 
-.neonZ {
+.neonText {
+  text-shadow: 0 0 1px #02f938;
+}
+
+.neon3 {
   color: rgb(196, 250, 228);
   text-shadow: 0 0 1px #02f938, 0 0 1px #02f938, 0 0 1px #02f938,
     0 0 10px #02f938, 0 0 11px #02f938;

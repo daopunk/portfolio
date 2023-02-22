@@ -12,7 +12,6 @@ export default function Home() {
         <Flex className="bubble"></Flex>
         <Flex className="bubble"></Flex>
         <Flex className="bubble"></Flex>
-        <Flex className="bubble"></Flex>
       </Flex>
     );
   };
@@ -26,12 +25,12 @@ export default function Home() {
         transform="translate(-50%, -45%)"
       >
         <VStack alignItems="start">
-          <Heading fontWeight="thin" className="neonY">
+          <Heading fontWeight="thin" className="neonName">
             Hunter King
           </Heading>
-          <Heading className="neonYy">
+          <Heading className="neonBase">
             Web
-            <span className="neonZ">3</span> Developer
+            <span className="neon3">3</span> Developer
           </Heading>
         </VStack>
       </Flex>
@@ -42,10 +41,10 @@ export default function Home() {
     return (
       <Flex position="absolute" bottom="0" left="0" pb="20" pl="3%">
         <VStack alignItems="start">
-          <Text fontWeight="extrabold" className="neonYy">
+          <Text fontWeight="medium" className="neonBase">
             Smart Contract Engineering
           </Text>
-          <Text fontWeight="extrabold" className="neonYy">
+          <Text fontWeight="medium" className="neonBase">
             Fullstack Development
           </Text>
         </VStack>

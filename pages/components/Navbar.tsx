@@ -13,7 +13,7 @@ const Navbar = () => {
           <Heading
             fontSize="20"
             fontWeight="bold"
-            className="neonYy"
+            className="neonBase"
             _hover={{ textShadow: y }}
           >
             {routes[0]}
@@ -24,7 +24,7 @@ const Navbar = () => {
           <Heading
             fontSize="20"
             fontWeight="bold"
-            className="neonYy"
+            className="neonBase"
             _hover={{ textShadow: y }}
           >
             {routes[1]}
@@ -35,7 +35,7 @@ const Navbar = () => {
           <Heading
             fontSize="20"
             fontWeight="bold"
-            className="neonYy"
+            className="neonBase"
             _hover={{ textShadow: y }}
           >
             {routes[2]}
