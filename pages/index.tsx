@@ -1,16 +1,65 @@
-import { VStack } from '@chakra-ui/react';
-import Meta from './components/Meta';
+import { VStack, Flex, Heading, Text } from '@chakra-ui/react';
+import Head from 'next/head';
 import Navbar from './components/Navbar';
-import Name from './components/Name';
 import Footer from './components/Footer';
-import Roles from './components/Roles';
 import Animation from './components/Animation';
-import Background from './design/Background';
 
 export default function Home() {
+  const Background = () => {
+    return (
+      <Flex id="canvas" position="absolute" top="-5">
+        <Flex className="bubble"></Flex>
+        <Flex className="bubble"></Flex>
+        <Flex className="bubble"></Flex>
+        <Flex className="bubble"></Flex>
+        <Flex className="bubble"></Flex>
+      </Flex>
+    );
+  };
+
+  const Name = () => {
+    return (
+      <Flex
+        position="absolute"
+        top="45%"
+        left="50%"
+        transform="translate(-50%, -45%)"
+      >
+        <VStack alignItems="start">
+          <Heading fontWeight="thin" className="neonY">
+            Hunter King
+          </Heading>
+          <Heading className="neonYy">
+            Web
+            <span className="neonZ">3</span> Developer
+          </Heading>
+        </VStack>
+      </Flex>
+    );
+  };
+
+  const Roles = () => {
+    return (
+      <Flex position="absolute" bottom="0" left="0" pb="20" pl="3%">
+        <VStack alignItems="start">
+          <Text fontWeight="extrabold" className="neonYy">
+            Smart Contract Engineering
+          </Text>
+          <Text fontWeight="extrabold" className="neonYy">
+            Fullstack Development
+          </Text>
+        </VStack>
+      </Flex>
+    );
+  };
+
   return (
     <VStack h="100vh" position="relative">
-      <Meta />
+      <Head>
+        <title>Hunter King</title>
+        <meta name="description" content="Hunter King's Portfolio" />
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <Navbar />
       <Background />
       <Name />
