@@ -36,10 +36,10 @@ const ProjectCard = (props: any) => {
         <Text>{desc}</Text>
         <Divider my="5px" />
         <Flex justify="space-evenly">
-          <Link href={live} target="_blank">
+          <Link href={live ?? ''} target="_blank">
             <Button variant="ghost">Live Demo</Button>
           </Link>
-          <Link href={github} target="_blank">
+          <Link href={github ?? ''} target="_blank">
             <Button variant="ghost">Source Code</Button>
           </Link>
         </Flex>
