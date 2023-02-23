@@ -1,48 +1,48 @@
 @keyframes updown {
   0% {
-    top: 120vh;
+    top: 130vh;
   }
   50% {
     top: 0;
   }
   100% {
-    top: 110vh;
+    top: 130vh;
   }
 }
 
 @keyframes downup {
   0% {
-    bottom: 120vh;
+    bottom: 100vh;
   }
   50% {
     bottom: 0;
   }
   100% {
-    bottom: 110vh;
+    bottom: 100vh;
   }
 }
 
 @keyframes leftright {
   0% {
-    left: -20vh;
+    left: 0vh;
   }
   50% {
-    left: 120vh;
+    left: 100vh;
   }
   100% {
-    left: -20;
+    left: 0vh;
   }
 }
 
 @keyframes rightleft {
   0% {
-    right: -20vh;
+    right: 0vh;
   }
   50% {
-    right: 120vh;
+    right: 100vh;
   }
   100% {
-    right: -20;
+    right: 0vh;
   }
 }
 
@@ -51,16 +51,10 @@
     width: 150vh;
   }
   50% {
-    width: 130vh;
+    width: 150vh;
   }
   100% {
-    width: 250vh;
-  }
-}
-
-@keyframes forog180 {
-  100% {
-    transform: rotate(180deg);
+    width: 150vh;
   }
 }
 
@@ -90,17 +84,17 @@
   position: absolute;
   filter: blur(15vh);
   animation: downup linear 17s infinite, rightleft ease-in-out 17s infinite,
-    vastag linear 10s infinite, forog180 linear 10s infinite;
+    vastag linear 17s infinite, forog360 linear 17s infinite;
 }
 .bubble:nth-child(2) {
-  animation: downup ease-in 10s infinite, rightleft ease-in-out 10s infinite,
-    vastag linear 12s infinite, forog360 linear 15s infinite;
+  animation: updown ease-in 17s infinite, rightleft ease-in-out 17s infinite,
+    vastag linear 17s infinite, forog360 linear 17s infinite;
 }
 .bubble:nth-child(3) {
-  animation: updown ease-out 8s infinite, leftright ease-in-out 22s infinite,
-    vastag linear 10s infinite, forog180 linear 10s infinite;
+  animation: updown ease-out 17s infinite, leftright ease-in-out 17s infinite,
+    vastag linear 17s infinite, forog360 linear 17s infinite;
 }
 .bubble:last-child {
-  animation: updown linear 33s infinite, leftright ease-in-out 33s infinite,
-    vastag linear 10s infinite, forog360 linear 15s infinite;
+  animation: downup linear 17s infinite, leftright ease-in-out 17s infinite,
+    vastag linear 17s infinite, forog360 linear 17s infinite;
 }
