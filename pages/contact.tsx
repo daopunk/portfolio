@@ -61,7 +61,7 @@ export default function Contact() {
   };
 
   return (
-    <VStack h="125vh" position="relative" backgroundColor="black">
+    <VStack h="125vh" backgroundColor="black">
       <Homebar right="ABOUT" />
       <VStack py="50px">
         <Text fontWeight="medium" className="neonText" py="15px" fontSize="20">

@@ -1,6 +1,5 @@
 import Link from 'next/link';
-import { HStack, VStack, Flex, Spacer, Text } from '@chakra-ui/layout';
-import { IconButton, Icon } from '@chakra-ui/react';
+import { Flex, Spacer, Icon } from '@chakra-ui/react';
 import { FaLinkedin, FaGithubSquare, FaMedium } from 'react-icons/fa';
 
 const Footer = () => {

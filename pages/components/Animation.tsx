@@ -1,5 +1,4 @@
-import Link from 'next/link';
-import { HStack, VStack, Flex, Spacer, Text } from '@chakra-ui/layout';
+import { Flex, Text } from '@chakra-ui/layout';
 
 const Animation = () => {
   return (
