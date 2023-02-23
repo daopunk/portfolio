@@ -25,8 +25,13 @@ const ProjectCard = (props: any) => {
         </Flex>
       </CardHeader>
 
-      <Image objectFit="cover" src={image} alt="project cover image" />
-
+      <Image
+        background="black"
+        objectFit="cover"
+        boxSize="md"
+        src={image}
+        alt="project cover image"
+      />
       <CardBody>
         <Text>{desc}</Text>
         <Divider my="5px" />
