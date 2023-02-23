@@ -32,15 +32,15 @@ export default function Work() {
             name="DuoMint | Web3 Onboarding"
             desc="Duomint is the stress-free web3 onramp. New users receive a free NFT and are guided through the magic of web3 without the stress of wire transfers and gas fees."
             live="https://ethglobal.com/showcase/duomint-k1614"
-            github="https://github.com/Emergence-Dapp/emergence"
+            github="https://github.com/hking2/duomint"
             image="/duomintLogo.png"
           />
           <ProjectCard
-            name="EOA-Watch | Web3 Tooling"
-            desc="EOA-Watch is application that deploys a flashbot to rescue stranded assets in a vulnerable Ethereum wallet that still contains ERC20 or ERC721 tokens."
-            live="https://hack-dinero.netlify.app/"
-            github="https://github.com/hking2/eoa-rescue"
-            image="/eoaLogo.png"
+            name="Cindita's Tienda | E-Commerce"
+            desc="Cinidita's Tienda is an e-commerce application for art and jewelry sales with PayPal integration built with the MERN stack and hosted on DigitalOcean."
+            live="https://cindita.com/"
+            github="https://github.com/hking2/cindys-tienda"
+            image="/cinditaLogo.png"
           />
         </HStack>
         <HStack alignItems="baseline">
@@ -52,11 +52,11 @@ export default function Work() {
             image="/blogLogo.png"
           />
           <ProjectCard
-            name="Cindita's Tienda | E-Commerce"
-            desc="Cinidita's Tienda is an e-commerce application for art and jewelry sales with PayPal integration built with the MERN stack and hosted on DigitalOcean."
-            live="https://cindita.com/"
-            github="https://github.com/hking2/cindys-tienda"
-            image="/cinditaLogo.png"
+            name="EOA-Watch | Web3 Tooling"
+            desc="EOA-Watch is application that deploys a flashbot to rescue stranded assets in a vulnerable Ethereum wallet that still contains ERC20 or ERC721 tokens."
+            live="https://hack-dinero.netlify.app/"
+            github="https://github.com/hking2/eoa-rescue"
+            image="/eoaLogo.png"
           />
         </HStack>
       </VStack>
