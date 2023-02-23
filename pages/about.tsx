@@ -32,13 +32,13 @@ export default function About() {
           <UnorderedList>
             <ListItem>Solidity, EVM</ListItem>
             <ListItem>JavaScript, TypeScript</ListItem>
-            <ListItem>React, NextJS, NodeJS</ListItem>
+            <ListItem>ReactJS, NextJS, NodeJS</ListItem>
             <ListItem>Hardhat, Forge / Foundry</ListItem>
             <ListItem>EthersJS, SolC-JS</ListItem>
-            <ListItem>IPFS</ListItem>
             <ListItem>HTML, CSS, ChakraUI</ListItem>
             <ListItem>Git, Github</ListItem>
             <ListItem>MongoDB, SQL, Subgraph</ListItem>
+            <ListItem>IPFS</ListItem>
           </UnorderedList>
           <Heading size="md" fontWeight="bold" pt="15px">
             Hackathon Awards:
@@ -51,6 +51,15 @@ export default function About() {
           </UnorderedList>
         </VStack>
         <Flex w="380px" p="30px">
+          <Spacer />
+          <Link
+            href="https://docs.google.com/document/d/14kT0Y5x_KzkCvjgJkgEdzoAfpA-Q0sc3FZOoBSH7yC8/edit"
+            target="_blank"
+          >
+            <Button className="neonText" fontSize="20">
+              View Resume
+            </Button>
+          </Link>
           <Spacer />
           <Link href="/contact">
             <Button className="neonText" fontSize="20">

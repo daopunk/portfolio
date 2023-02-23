@@ -7,7 +7,7 @@ const Footer = () => {
   const iconShadow = '0 0 3px #02f938, 0 0 1px #02f938';
 
   return (
-    <Flex position="absolute" bottom="0" w="100%" p=".5%">
+    <Flex position="absolute" bottom="0" w="100%" p="10px">
       <Spacer />
       <Flex ml="20%">
         <Link
