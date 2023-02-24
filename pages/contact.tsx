@@ -12,9 +12,12 @@ import {
   Alert,
   AlertIcon,
   AlertDescription,
+  useMediaQuery,
 } from '@chakra-ui/react';
 
 export default function Contact() {
+  const [isLessThan900] = useMediaQuery('(max-width: 900px)');
+
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [subject, setSubject] = useState('');
@@ -90,7 +93,7 @@ export default function Contact() {
           </Alert>
         )}
         <FormControl>
-          <Stack w="60vw" py="10px">
+          <Stack w={isLessThan900 ? '90vw' : '60vw'} py="10px">
             <InputGroup size="md">
               <InputLeftAddon children="Name" />
               <Input

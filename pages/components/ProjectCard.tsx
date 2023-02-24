@@ -16,7 +16,7 @@ const ProjectCard = (props: any) => {
   const { name, desc, live, github, image } = props;
 
   return (
-    <Card maxW="md">
+    <Card maxW="sm" maxH="xl">
       <CardHeader>
         <Flex flex="1" gap="4" alignItems="center" flexWrap="wrap">
           <Box>
@@ -28,10 +28,12 @@ const ProjectCard = (props: any) => {
       <Image
         background="black"
         objectFit="cover"
-        boxSize="md"
+        boxSize="sm"
+        maxH="300px"
         src={image}
         alt="project cover image"
       />
+
       <CardBody>
         <Text>{desc}</Text>
         <Divider my="5px" />

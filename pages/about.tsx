@@ -10,16 +10,19 @@ import {
   UnorderedList,
   ListItem,
   Heading,
-} from '@chakra-ui/layout';
-import { Button } from '@chakra-ui/button';
+  Button,
+  useMediaQuery,
+} from '@chakra-ui/react';
 
 export default function About() {
+  const [isLessThan500] = useMediaQuery('(max-width: 500px)');
+
   return (
-    <VStack h="200vh" backgroundColor="black">
+    <VStack h={isLessThan500 ? '230vh' : '200vh'} backgroundColor="black">
       <Homebar />
       <VStack top="150px" alignItems="start">
         <VStack
-          w="380px"
+          w={isLessThan500 ? '310px' : '380px'}
           pt="50px"
           mx="auto"
           alignItems="start"
@@ -82,8 +85,14 @@ export default function About() {
           <UnorderedList>
             <ListItem>
               EthMexico - Finalist, Polygon / SuperFluid Awards
+              <UnorderedList>
+                <ListItem listStyleType="none">August 2022</ListItem>
+              </UnorderedList>
             </ListItem>
             <ListItem>NFT EthGlobal - Finalist</ListItem>
+            <UnorderedList>
+              <ListItem listStyleType="none">January 2022</ListItem>
+            </UnorderedList>
           </UnorderedList>
           <Heading size="md" fontWeight="bold" pt="15px">
             Conference Presentations:
