@@ -84,14 +84,27 @@ export default function About() {
           </Heading>
           <UnorderedList>
             <ListItem>
-              EthMexico - Finalist, Polygon / SuperFluid Awards
+              EthDenver, March 2023
               <UnorderedList>
-                <ListItem listStyleType="none">August 2022</ListItem>
+                <ListItem listStyleType="none">
+                  Polygon "Best Use" Award
+                </ListItem>
+                <ListItem listStyleType="none">
+                  Chainlink Functions Award
+                </ListItem>
               </UnorderedList>
             </ListItem>
-            <ListItem>NFT EthGlobal - Finalist</ListItem>
+            <ListItem>
+              EthMexico, August 2022
+              <UnorderedList>
+                <ListItem listStyleType="none">Hackathon Finalist</ListItem>
+                <ListItem listStyleType="none">Polygon Award</ListItem>{' '}
+                <ListItem listStyleType="none">SuperFluid Award</ListItem>
+              </UnorderedList>
+            </ListItem>
+            <ListItem>NFT EthGlobal, January 2022</ListItem>
             <UnorderedList>
-              <ListItem listStyleType="none">January 2022</ListItem>
+              <ListItem listStyleType="none">Hackathon Finalist</ListItem>
             </UnorderedList>
           </UnorderedList>
           <Heading size="md" fontWeight="bold" pt="15px">
