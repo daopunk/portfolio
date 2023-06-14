@@ -88,7 +88,7 @@ export default function Contact() {
           <Alert status="error" variant="top-accent">
             <AlertIcon />
             <AlertDescription>
-              Message submission Error! Please try again
+              I stopped paying for Firebase!! Just send me an email ;)
             </AlertDescription>
           </Alert>
         )}

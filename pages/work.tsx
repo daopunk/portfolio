@@ -10,7 +10,7 @@ export default function Work() {
     <VStack h={isLargerThan1000 ? '300vh' : '525vh'} backgroundColor="black">
       <Homebar left="ABOUT" />
       <Heading className="neonText" pt="50px">
-        Selected Web Apps / [d]Apps
+        Selected Web Apps / dApps
       </Heading>
       {isLargerThan1000 ? (
         <VStack py="50px">
@@ -18,7 +18,7 @@ export default function Work() {
             <ProjectCard
               name="Rite of Moloch | DAO Tooling"
               desc="DAO onboarding and staking tool that integrates Hats Protocol and DaoHausV3 Baal Shamans to enhance governance around onboarding."
-              live="https://rite-of-moloch-v1.vercel.app/"
+              live="https://rom.wtf/"
               github="https://github.com/rite-of-moloch/RiteOfMoloch-v1.0"
               image="/riteLogo.png"
             />

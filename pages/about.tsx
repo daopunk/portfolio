@@ -49,18 +49,16 @@ export default function About() {
               </UnorderedList>
             </ListItem>
             <ListItem>
+              <b>Freelance - Fullstack Developer</b>
+              <UnorderedList>
+                <ListItem listStyleType="none">March 2021 - Present</ListItem>
+              </UnorderedList>
+            </ListItem>
+            <ListItem>
               <b>ChainShot - Teacher Assistant</b>
               <UnorderedList>
                 <ListItem listStyleType="none">
                   January 2022 - July 2022
-                </ListItem>
-              </UnorderedList>
-            </ListItem>
-            <ListItem>
-              <b>Freelance - E-Commerce Web Developer</b>
-              <UnorderedList>
-                <ListItem listStyleType="none">
-                  March 2021 - October 2021
                 </ListItem>
               </UnorderedList>
             </ListItem>
